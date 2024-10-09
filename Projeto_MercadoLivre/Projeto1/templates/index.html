@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Mercado Livre</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Dados dos Produtos</h1>
+    <div class="imagem">
+        <img src="{{ url_for('static', filename='mercado_livre.jpg')}}">
+    </div>
+    <!-- Formulário de pesquisa -->
+    <div class="botoes">
+        <form method="post">
+            <label for="termo">Pesquisar:</label>
+            <input type="text" id="termo" name="termo" placeholder="Digite o item para buscar" required>
+            
+            <label for="quantidade">Quantidade de itens:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" value="10" required>
+            
+            <button type="submit">Pesquisar</button>
+        </form>
+    </div>
+
+    <!-- Exibir a tabela -->
+    <div class="tabela">
+        {{ tables|safe }}
+    </div>
+</body>
+</html>

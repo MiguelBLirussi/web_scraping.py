@@ -1,0 +1,110 @@
+/* styles.css */
+
+/* Estilo geral da página */
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:#fae24c;
+}
+
+/* Estilo do cabeçalho */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color:#323b5e;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.imagem {
+    margin-top: 5px;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+}
+
+
+/* Estilo da tabela */
+table.data {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table.data th, table.data td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+
+table.data th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+}
+
+table.data tr:nth-child(even) {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+table.data tr:hover {
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+/* Estilo dos inputs e botões */
+input[type="text"],button {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.botoes {
+    width: 692px;
+    margin: auto;
+    color: #323b5e;
+    font-weight: bold;
+    font-size:20px;
+}
+
+button{
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+input[type="number"] {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 40px; 
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    margin-right: 0;
+}
